@@ -5,15 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a44bb6e0-4db2-407a-aa81-33cccca57105" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyRPCFramework/src/main/java/org/myrpc/server/DispatcherServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyRPCFramework/src/main/java/org/myrpc/server/HelloServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Provider/src/main/java/org/myrpc/Provider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyRPCCommonAPI/src/main/java/org/myrpc/entity/Invocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyRPCCommonAPI/src/main/java/org/myrpc/entity/Url.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyRPCFramework/src/main/java/org/myrpc/loadbalancer/LoadBalancer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyRPCFramework/src/main/java/org/myrpc/protocol/HttpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyRPCFramework/src/main/java/org/myrpc/proxy/ProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyRPCFramework/src/main/java/org/myrpc/register/LocalRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyRPCFramework/src/main/java/org/myrpc/register/RegistCenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consumer/src/main/java/org/myrpc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/src/main/java/org/myrpc/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consumer/src/main/java/org/myrpc/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/src/main/java/org/myrpc/Consumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyRPCFramework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MyRPCFramework/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/org/myrpc/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyRPCFramework/src/main/java/org/myrpc/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyRPCFramework/src/main/java/org/myrpc/server/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyRPCFramework/src/main/java/org/myrpc/protocol/DispatcherServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyRPCFramework/src/main/java/org/myrpc/server/HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyRPCFramework/src/main/java/org/myrpc/protocol/HttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/org/myrpc/Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/org/myrpc/Provider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,10 +61,23 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
     "onboarding.tips.debug.path": "/Users/qiaoyinbo/IdeaProjects/MyRPC/Consumer/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "project.propCompiler"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Consumer">
+    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.myrpc.Consumer" />
+      <module name="Consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.myrpc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Provider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.myrpc.Provider" />
       <module name="Provider" />
@@ -73,6 +93,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Consumer" />
         <item itemvalue="Application.Provider" />
       </list>
     </recent_temporary>
@@ -113,11 +134,6 @@
           <url>file://$PROJECT_DIR$/Provider/src/main/java/org/myrpc/Main.java</url>
           <line>15</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Consumer/src/main/java/org/myrpc/Consumer.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

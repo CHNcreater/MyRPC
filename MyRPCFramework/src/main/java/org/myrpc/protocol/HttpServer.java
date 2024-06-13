@@ -1,4 +1,4 @@
-package org.myrpc.server;
+package org.myrpc.protocol;
 
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.Server;
